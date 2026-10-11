@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kuku 💗</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  background: linear-gradient(135deg, #ffe4ef, #fff5fa, #eadfff);
+  color: #873b66;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 45px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card {
+  max-width: 480px;
+  width: 100%;
+  padding: 28px 20px;
+  background: rgba(255,255,255,0.78);
+  border: 2px solid white;
+  border-radius: 30px;
+  box-shadow: 0 12px 40px #c85c9430;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #ffe0ec;
+  border-radius: 25px;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: clamp(36px, 10vw, 54px);
+  line-height: 1.15;
+  color: #ed5796;
+  margin: 20px 0 8px;
+}
+
+h2 {
+  color: #d44f89;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.bear {
+  font-size: 82px;
+  animation: cuddle 2s infinite ease-in-out;
+}
+
+button {
+  padding: 14px 23px;
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(90deg, #ff629b, #c77dff);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 18px #dc6ca64c;
+  margin: 8px 4px;
+}
+
+button:active {
+  transform: scale(.97);
+}
+
+.small {
+  font-size: 13px;
+  opacity: .8;
+}
+
+.section {
+  max-width: 650px;
+  width: 92%;
+  margin: 30px auto;
+  padding: 28px 20px;
+  background: #fffafd;
+  border: 2px dashed #f5a7cb;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px #c85c9415;
+}
+
+#letter {
+  display: none;
+  animation: appear 1s ease;
+}
+
+.cake {
+  font-size: 70px;
+  margin: 15px;
+}
+
+.wish {
+  background: #ffe8f1;
+  padding: 15px;
+  border-radius: 18px;
+  margin: 12px 0;
+}
+
+footer {
+  padding: 30px 15px 45px;
+  color: #b83e7b;
+}
+
+.floating {
+  position: fixed;
+  top: -40px;
+  pointer-events: none;
+  z-index: 10;
+  animation: fall linear forwards;
+}
+
+@keyframes cuddle {
+  0%, 100% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(5deg) translateY(-9px); }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fall {
+  to { transform: translateY(115vh) rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="card">
+    <div class="tag">🎀 A little surprise made with love 🎀</div>
+
+    <div class="bear">🧸💗</div>
+
+    <p>To my favorite girl in the whole world</p>
+
+    <h1>Happy Birthday,<br>Kuku! 🎂</h1>
+
+    <p>
+      Today is all about you, my princess.
+      You deserve a thousand smiles and a million hugs. 💕
+    </p>
+
+    <div style="font-size:32px">🌷 🎁 🦋 🌷</div>
+
+    <button onclick="openSurprise()">
+      Open Your Surprise 💌
+    </button>
+
+    <p class="small">Made specially for you by your Jaan ❤️</p>
+  </div>
+</section>
+
+<section class="section" id="letter">
+  <div style="font-size:55px">💌</div>
+  <h2>A Letter For My Kuku</h2>
+
+  <p style="text-align:left">
+    Hey, my Kuku! 🥹💗
+    <br><br>
+    Happy Birthday, meri jaan! 🎂❤️
+    <br><br>
+    I wish I could be beside you right now,
+    holding your hand and watching you smile.
+    You are someone very special to me, and I
+    hope today gives you as much happiness as
+    you bring into my life.
+    <br><br>
+    I love your smile, your little ways, and all
+    the moments that make you YOU. You don't
+    have to be perfect to be precious to me.
+    Just keep being my lovely Kuku. 🧸
+    <br><br>
+    May Allah bless you with happiness, good
+    health, success, peace, and everything
+    beautiful your heart wishes for. Ameen. 🤲🏻
+    <br><br>
+    No matter how busy life gets, I hope you
+    always remember how special you are.
+    Today, tomorrow, and every birthday ahead,
+    you deserve to feel loved.
+    <br><br>
+    <strong>Happy Birthday, meri Kuku! 🎀💋</strong>
+    <br><br>
+    Forever your Jaan,<br>
+    <strong>Zain ❤️</strong>
+  </p>
+
+  <div class="cake">🎂</div>
+  <h2>Make a Birthday Wish! ✨</h2>
+
+  <p>Close your eyes, meri jaan, and wish for something beautiful. 💗</p>
+
+  <button onclick="celebrate()">Send You A Million Hearts 💖</button>
+</section>
+
+<section class="section">
+  <h2>Reasons You're So Special 🌸</h2>
+
+  <div class="wish">💗 Your beautiful smile</div>
+  <div class="wish">🧸 The happiness you bring</div>
+  <div class="wish">🌷 The person you are</div>
+  <div class="wish">💌 Every little memory we share</div>
+  <div class="wish">❤️ Simply because you're my Kuku</div>
+
+  <p>My favorite person, today and always. 🫶🏻</p>
+</section>
+
+<section class="section">
+  <div style="font-size:50px">🐻💞🐰</div>
+  <h2>One Last Thing, Kuku...</h2>
+
+  <p>
+    If I could give you one gift, it would be
+    the ability to see yourself through my eyes.
+    Then you would understand just how precious
+    you are to me. 🥹❤️
+  </p>
+
+  <h2>Love You, Meri Jaan! 💋</h2>
+  <button onclick="celebrate()">Tap For More Love 💗</button>
+</section>
+
+<footer>
+  Made with all my love 💗<br>
+  <strong>Zain, her Jaan</strong><br>
+  <span>Happy Birthday, Kuku! 🎂</span>
+</footer>
+
+<script>
+function openSurprise() {
+  const letter = document.getElementById("letter");
+
+  letter.style.display = "block";
+  letter.scrollIntoView({ behavior: "smooth" });
+
+  celebrate();
+}
+
+function celebrate() {
+  const symbols = ["💗", "💖", "💕", "🌸", "🎀", "✨", "❤️"];
+
+  for (let i = 0; i < 65; i++) {
+    setTimeout(() => {
+      const item = document.createElement("div");
+
+      item.className = "floating";
+      item.textContent =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+      item.style.left = Math.random() * 100 + "vw";
+      item.style.fontSize = (18 + Math.random() * 20) + "px";
+      item.style.animationDuration = (3 + Math.random() * 4) + "s";
+
+      document.body.appendChild(item);
+
+      setTimeout(() => item.remove(), 7500);
+    }, i * 35);
+  }
+}
+</script>
+
+</body>
+</html>
